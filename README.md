@@ -2,9 +2,9 @@
 
 string_calculator : https://blog.incubyte.co/blog/tdd-assessment/
 
-### StringCalculator: A Ruby Module for Summing Numbers in Strings
+# StringCalculator: A Ruby Module for Summing Numbers in Strings
 
-## StringCalculator is a Ruby module designed to sum numbers within a string. It supports various input formats, including comma-separated and newline-separated numbers, as well as custom delimiters.
+#### StringCalculator is a Ruby module designed to sum numbers within a string. It supports various input formats, including comma-separated and newline-separated numbers, as well as custom delimiters.
 
 # Features
 - Handles simple cases: empty strings, single numbers, and two numbers.
