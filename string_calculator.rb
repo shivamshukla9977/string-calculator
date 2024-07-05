@@ -6,7 +6,16 @@ class StringCalculator
     # Return number itself if the input string is single value
     return string.to_i if string.length.eql?(1)
 
-    # Return sum of numbers seperated with commas
-    string.split('').map(&:to_i).sum
+    # Remove all the delimiters from input string
+    numbers = string.scan(/-?\d+/).map(&:to_i)
+
+    # Find negative numbers
+    negatives = numbers.select { |i| i < 0 }
+
+    # Raise an exception if negative numbers are found
+    raise "negative numbers not allowed: #{negatives.join(', ')}" if negatives.any?
+
+    # Return sum of numbers
+    numbers.sum
   end
 end
